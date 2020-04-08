@@ -29,7 +29,18 @@
 			
 		</div>
 
-		<div class="nav"> </div>
+		<div class="nav"> 
+
+			<ol>
+				<li><a href="#">Strona główna</a></li>
+				<li><a href="#">Klasyki NES</a></li>
+				<li><a href="#">Gry filmowe</a></li>
+				<li><a href="#">Bijatyki</a></li>
+				<li><a href="#">Gry sportowe</a></li>
+				<li><a href="#">O autorach</a></li>
+			</ol>
+
+		</div>
 
 			<div class="content">
 				
@@ -66,5 +77,36 @@
 	
 	<script src="jquery-3.4.1.min.js"></script>
 	
+
+	
+	<script>
+	
+		$(document).ready(function() {
+		var NavY = $('.nav').offset().top;
+		 
+		var stickyNav = function(){
+		var ScrollY = $(window).scrollTop();
+			  
+		if (ScrollY > NavY) { 
+			$('.nav').addClass('sticky');
+		} else {
+			$('.nav').removeClass('sticky'); 
+		}
+		};
+		 
+		stickyNav();
+		 
+		$(window).scroll(function() {
+			stickyNav();
+		});
+		});
+		
+	</script>
+	
+
+
+	</script>
+
+
 </body>
 </html>

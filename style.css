@@ -29,7 +29,6 @@ body
 
 .nav
 {
-    height: 40px;
     text-align: center;
     padding: 10px 0px;
     background-color: #c34f4f;
@@ -124,4 +123,22 @@ body
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 100;
+}
+
+ol
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+}
+
+ol a
+{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
 }
